@@ -48,34 +48,38 @@ function NavBar() {
         {/* Mobile Nav */}
         <div className="py-2 backdrop-blur-md lg:hidden">
           <div className="flex items-center justify-between">
-            <div>
-              <a href="/">
-                <span className="pl-2 uppercase">Nikoloz Tsutskiridze</span>
-              </a>
-            </div>
-            <div className="flex items-center">
-              <button
-                className="focus:outline-none lg:hidden"
-                onClick={toggleMobileMenu}
-                aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-              >
-                {isMenuOpen ? (
-                  <RiCloseLine className="m-2 h-6 w-6" />
-                ) : (
-                  <RiMenu3Line className="m-2 h-6 w-6" />
-                )}
-              </button>
-            </div>
+            <button
+              className="ml-auto focus:outline-none lg:hidden"
+              onClick={toggleMobileMenu}
+              aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+            >
+              {isMenuOpen ? (
+                <RiCloseLine className="m-2 h-6 w-6" />
+              ) : (
+                <RiMenu3Line className="m-2 h-6 w-6" />
+              )}
+            </button>
           </div>
-          {/* Dropdown Menu */}
-          {isMenuOpen && (
-            <div className="my-4 mx-4 flex flex-col gap-6 rounded-lg bg-white p-4 text-black shadow-lg">
-              <ul className="flex flex-col gap-6">
+        </div>
+
+        {/* Full-screen overlay for mobile menu */}
+        {isMenuOpen && (
+          <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-30 backdrop-blur-md">
+            <div className="flex flex-col items-center gap-6 p-4 text-white">
+              <button
+                className="absolute top-4 right-4 focus:outline-none"
+                onClick={toggleMobileMenu}
+                aria-label="Close Menu"
+              >
+                <RiCloseLine className="h-8 w-8" />
+              </button>
+
+              <ul className="flex flex-col gap-6 items-center">
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
                       href={item.href}
-                      className="block w-full text-lg"
+                      className="block w-full text-lg text-center"
                       onClick={(e) => handleClick(e, item.href)}
                     >
                       {item.label}
@@ -84,8 +88,8 @@ function NavBar() {
                 ))}
               </ul>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </nav>
     </div>
   );

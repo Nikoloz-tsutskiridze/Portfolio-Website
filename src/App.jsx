@@ -1,4 +1,6 @@
 import NavBar from "../src/components/NavBar";
+import Contact from "./components/Contact";
+import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -11,9 +13,11 @@ function App() {
       <div className="relative z-10">
         <NavBar />
         <Hero />
-        <Projects />
         <Skills />
+        <Projects />
         <Experience />
+        <Education />
+        <Contact />
       </div>
     </main>
   );
