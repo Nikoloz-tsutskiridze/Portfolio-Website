@@ -37,13 +37,7 @@ export const PROJECTS = [
     title: "The Wild Oasis - Web",
     description:
       "The Wild Oasis is a web application that transports users to the heart of nature and is designed for customers to easily book wooden cabins for their desired dates.",
-    techStack: [
-      "React.js",
-      "Next.js",
-      "Javascript",
-      "Tailwind CSS",
-      "Supabase",
-    ],
+    techStack: ["React.js", "Next.js", "Tailwind CSS", "Supabase"],
     imgSrc: project1,
     link: "https://the-wild-oasis-web-psi.vercel.app/",
   },
@@ -52,45 +46,45 @@ export const PROJECTS = [
     title: "The Wild Oasis - Admin Panel",
     description:
       "The Admin Panel is designed for internal personnel to efficiently manage the data of wooden cabins. It provides features for adding, updating, and deleting cabin listings.",
-    techStack: ["React.js", "Javascript", "styled-components", "Supabase"],
+    techStack: ["React.js", "styled-components", "Supabase"],
     imgSrc: project2,
     link: "https://the-woodland-haven.netlify.app/login",
   },
   {
     id: 3,
-    title: "WorldWise",
+    title: "Cartify",
     description:
-      "WorldWise serves as a digital guide to the world, offering insights into various countries, including their history, geography, cultures, languages, and significant landmarks. ",
-    techStack: ["React.js", "Javascript", "HTML & CSS", "Map Libraries"],
+      "This is an responsive e-commerce platform where users can easily register and browse a wide selection of products. With a user-friendly interface, customers can quickly place orders for their desired items.",
+    techStack: ["React.js", "Tailwind CSS"],
     imgSrc: project3,
-    link: "https://world-wize.netlify.app/",
+    link: "https://cartify-tawny.vercel.app/",
   },
   {
     id: 4,
-    title: "Usepopcorn",
-    description:
-      "This site will help you find and rate your favorite or least favorite movies, offering a user-friendly interface that makes exploring film options easy and enjoyable.",
-    techStack: ["React.js", "Javascript", "HTML & CSS"],
-    imgSrc: project4,
-    link: "https://usepopcorn-henna.vercel.app/",
-  },
-  {
-    id: 5,
     title: "The Last Slice",
     description:
       "The Last Slice website allows you to effortlessly check out pizzas, place orders, and manage your desired quantities",
-    techStack: ["React.js", "Javascript", "HTML & CSS"],
-    imgSrc: project5,
+    techStack: ["React.js", "Tailwind CSS"],
+    imgSrc: project4,
     link: "https://the-last-slice.netlify.app/",
   },
   {
-    id: 6,
-    title: "React Quiz",
+    id: 5,
+    title: "WorldWise",
     description:
-      "The Small React Quiz Test is a knowledge-check app where you complete tasks within a given time limit to earn points.",
-    techStack: ["React.js", "Javascript", "HTML & CSS"],
+      "WorldWise serves as a digital guide to the world, offering insights into various countries, including their history, geography, cultures, languages, and significant landmarks. ",
+    techStack: ["React.js", "Map library"],
+    imgSrc: project5,
+    link: "https://world-wize.netlify.app/",
+  },
+  {
+    id: 6,
+    title: "Usepopcorn",
+    description:
+      "This site will help you find and rate your favorite or least favorite movies, offering a user-friendly interface that makes exploring film options easy and enjoyable.",
+    techStack: ["React.js", "CSS"],
     imgSrc: project6,
-    link: "https://about-test.netlify.app/",
+    link: "https://usepopcorn-henna.vercel.app/",
   },
 ];
 
