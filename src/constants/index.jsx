@@ -17,7 +17,6 @@ import {
 import { RiCodeSSlashLine } from "@remixicon/react";
 
 export const NAVIGATION_LINKS = [
-  { label: "Home", href: "#home" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Work Experience", href: "#work" },

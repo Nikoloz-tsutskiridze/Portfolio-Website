@@ -29,7 +29,7 @@ function NavBar() {
     <div>
       <nav className="fixed top-0 left-0 right-0 z-50 lg:top-4  ">
         {/* Desktop Nav */}
-        <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-full border border-white/30 py-2 backdrop-blur-lg lg:flex">
+        <div className="mx-auto hidden max-w-xl items-center justify-center rounded-full border border-white/30 py-2 backdrop-blur-lg lg:flex">
           <ul className="flex items-center gap-16">
             {NAVIGATION_LINKS.map((item, index) => (
               <li key={index}>
