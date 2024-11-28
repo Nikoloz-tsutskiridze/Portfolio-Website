@@ -1,9 +1,10 @@
-import { RiCloseLine, RiMenu3Line } from "@remixicon/react";
-import { useState } from "react";
+import { RiCloseLine, RiMenu3Line, RiArrowUpLine } from "@remixicon/react";
+import { useState, useEffect } from "react";
 import { NAVIGATION_LINKS } from "../constants";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
 
   function toggleMobileMenu() {
     setIsMenuOpen(!isMenuOpen);
@@ -25,9 +26,31 @@ function NavBar() {
     setIsMenuOpen(false);
   }
 
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+  useEffect(() => {
+    function handleScroll() {
+      const heroSection = document.getElementById("home");
+      if (heroSection) {
+        const heroBottom = heroSection.getBoundingClientRect().bottom;
+        setShowScrollToTop(heroBottom < 0); // Show button when hero is out of view
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <nav className="fixed top-0 left-0 right-0 z-50 lg:top-4  ">
+      <nav className="fixed top-0 left-0 right-0 z-50 lg:top-4">
         {/* Desktop Nav */}
         <div className="mx-auto hidden max-w-xl items-center justify-center rounded-full border border-white/30 py-2 backdrop-blur-lg lg:flex">
           <ul className="flex items-center gap-16">
@@ -91,6 +114,17 @@ function NavBar() {
           </div>
         )}
       </nav>
+
+      {/* Scroll-to-top button */}
+      {showScrollToTop && (
+        <button
+          className="fixed top-6 right-8 z-50 flex items-center justify-center w-10 h-10 bg-purple-600 text-white rounded-full shadow-lg hover:bg-purple-700"
+          onClick={scrollToTop}
+          aria-label="Scroll to top"
+        >
+          <RiArrowUpLine className="h-6 w-6" />
+        </button>
+      )}
     </div>
   );
 }

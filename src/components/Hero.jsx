@@ -64,11 +64,22 @@ function Hero() {
 
   return (
     <section
-      className="grid min-h-screen grid-cols-1 items-center justify-center gap-8 pt-16 lg:grid-cols-2 lg:pt-24 sm:px-10"
+      className="grid min-h-screen grid-cols-1 items-center justify-center gap-8 pt-16 sm:px-10 lg:grid-cols-2 lg:pt-24"
       id="home"
       ref={heroRef}
     >
-      {/* Left content */}
+      {/* Left content (Image) */}
+      <div className="flex justify-center lg:justify-start">
+        <img
+          src={profile}
+          alt={PROFILE.name}
+          width={400}
+          height={400}
+          className="hero-img rounded-full border border-purple-300/20 p-1"
+        />
+      </div>
+
+      {/* Right content */}
       <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
         <div className="mt-5 lg:mt-18">
           <h1 className="hero-title mb-1 text-3xl sm:text-4xl lg:text-5xl">
@@ -78,7 +89,7 @@ function Hero() {
             {PROFILE.role}
           </h2>
         </div>
-        <p className="hero-text max-w-2xl p-2 text-lg sm:text-[18px] tracking-tighter lg:text-left lg:text-2xl lg:mb-4 lg:ml-[-8px] ">
+        <p className="hero-text max-w-2xl p-2 text-lg sm:text-[18px] tracking-tighter lg:text-left lg:text-2xl lg:mb-4 lg:ml-[-8px]">
           {PROFILE.subheading}
         </p>
         <a
@@ -91,17 +102,6 @@ function Hero() {
           <span>Download Resume</span>
           <RiArrowRightUpLine />
         </a>
-      </div>
-
-      {/* Right content (Image) */}
-      <div className="flex justify-center lg:justify-end">
-        <img
-          src={profile}
-          alt={PROFILE.name}
-          width={400}
-          height={400}
-          className="hero-img rounded-full border border-purple-300/20 p-1"
-        />
       </div>
     </section>
   );

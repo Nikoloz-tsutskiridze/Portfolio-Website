@@ -60,12 +60,12 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    title: "The Last Slice",
+    title: "Rainbow Six Siege",
     description:
-      "The Last Slice website allows you to effortlessly check out pizzas, place orders, and manage your desired quantities",
-    techStack: ["React.js", "Tailwind CSS"],
+      "This site will help you discover your favorite or least favorite Rainbow Six Siege operators, offering a user-friendly interface that makes exploring strategies and gameplay options easy and exciting. Built with GSAP.",
+    techStack: ["React.js", "Tailwind CSS", "GSAP"],
     imgSrc: project4,
-    link: "https://the-last-slice.netlify.app/",
+    link: "https://rainbow-six-siegee.vercel.app/",
   },
   {
     id: 5,
@@ -78,24 +78,16 @@ export const PROJECTS = [
   },
   {
     id: 6,
-    title: "Usepopcorn",
+    title: "The Last Slice",
     description:
-      "This site will help you find and rate your favorite or least favorite movies, offering a user-friendly interface that makes exploring film options easy and enjoyable.",
-    techStack: ["React.js", "CSS"],
+      "The Last Slice website allows you to effortlessly check out pizzas, place orders, and manage your desired quantities",
+    techStack: ["React.js", "Tailwind CSS"],
     imgSrc: project6,
-    link: "https://usepopcorn-henna.vercel.app/",
+    link: "https://the-last-slice.netlify.app/",
   },
 ];
 
 export const SKILLS = [
-  {
-    name: "HTML",
-    icon: <RiHtml5Line className="text-orange-600" />,
-  },
-  {
-    name: "CSS",
-    icon: <RiCss3Line className="text-blue-500" />,
-  },
   {
     name: "JavaScript",
     icon: <RiJavascriptLine className="text-yellow-500" />,
@@ -109,12 +101,20 @@ export const SKILLS = [
     icon: <RiNextjsFill className="text-green-500" />,
   },
   {
+    name: "Tailwind CSS",
+    icon: <RiCodeSSlashLine className="text-teal-400" />,
+  },
+  {
     name: "Supabase",
     icon: <RiSupabaseFill className="text-green-600" />,
   },
   {
-    name: "Tailwind CSS",
-    icon: <RiCodeSSlashLine className="text-teal-400" />,
+    name: "CSS",
+    icon: <RiCss3Line className="text-blue-500" />,
+  },
+  {
+    name: "HTML",
+    icon: <RiHtml5Line className="text-orange-600" />,
   },
   {
     name: "Git",
