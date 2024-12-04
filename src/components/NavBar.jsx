@@ -118,7 +118,7 @@ function NavBar() {
       {/* Scroll-to-top button */}
       {showScrollToTop && (
         <button
-          className="fixed top-6 right-8 z-50 flex items-center justify-center w-10 h-10 bg-purple-600 text-white rounded-full shadow-lg hover:bg-purple-700"
+          className="fixed bottom-4 right-4 md:bottom-14 md:right-14 z-50 flex items-center justify-center w-10 h-10 bg-purple-600 text-white rounded-full shadow-lg hover:bg-purple-700"
           onClick={scrollToTop}
           aria-label="Scroll to top"
         >
