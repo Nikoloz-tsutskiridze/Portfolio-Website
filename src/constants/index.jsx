@@ -45,7 +45,7 @@ export const PROJECTS = [
     title: "The Wild Oasis - Admin Panel",
     description:
       "The Admin Panel is designed for internal personnel to efficiently manage the data of wooden cabins. It provides features for adding, updating, and deleting cabin listings.",
-    techStack: ["React.js", "styled-components", "Supabase"],
+    techStack: ["React.js", "Styled-components", "Supabase"],
     imgSrc: project2,
     link: "https://the-woodland-haven.netlify.app/login",
   },
@@ -78,12 +78,12 @@ export const PROJECTS = [
   },
   {
     id: 6,
-    title: "The Last Slice",
+    title: "Github - User Checker",
     description:
-      "The Last Slice website allows you to effortlessly check out pizzas, place orders, and manage your desired quantities",
-    techStack: ["React.js", "Tailwind CSS"],
+      "This is a simple web application designed to fetch and display GitHub user information. Users can search for any GitHub profile and view details like repositories, followers, and more.",
+    techStack: ["React.js", "Styled-components"],
     imgSrc: project6,
-    link: "https://the-last-slice.netlify.app/",
+    link: "https://github-users-checker.vercel.app/",
   },
 ];
 

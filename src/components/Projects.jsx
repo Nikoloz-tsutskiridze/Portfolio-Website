@@ -40,7 +40,8 @@ function Projects() {
               key={project.id}
               className="project-card flex w-full flex-col p-4 md:w-1/2 lg:w-1/3"
             >
-              <div className="flex-grow overflow-hidden rounded-lg border border-purple-300/20">
+              {/* <div className="project-card flex flex-col h-full p-4 md:w-1/2 lg:w-1/3"> */}
+              <div className=" flex flex-col h-full overflow-hidden rounded-lg border border-purple-300/20">
                 <a
                   href={project.link}
                   target="_blank"
@@ -52,27 +53,28 @@ function Projects() {
                     className="h-60 w-full object-cover"
                   />
                 </a>
-                <div className="p-6">
+                <div className="flex-grow p-4">
                   <h3 className="mb-2 text-lg font-medium lg:text-2xl">
                     {project.title}
                   </h3>
                   <p className="mb-4">{project.description}</p>
-                  <div className="mt-6">
-                    <strong>Tech Stack:</strong>
-                    <ul>
-                      {project.techStack.map((tech, index) => (
-                        <li
-                          key={index}
-                          className="mb-1 mr-2 inline-block rounded-full border-2 border-pink-500/30 px-3 py-1 text-sm font-semibold"
-                        >
-                          {tech}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                </div>
+                <div className=" bottom-0 left-0 right-0 p-5 border-purple-300/20">
+                  <div className="mb-3 font-bold">Tech Stack:</div>
+                  <ul>
+                    {project.techStack.map((tech, index) => (
+                      <li
+                        key={index}
+                        className="mb-1 mr-2 inline-block rounded-full border-2 border-pink-500/30 px-3 py-1 text-sm font-semibold"
+                      >
+                        {tech}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
+            // </div>
           ))}
         </div>
       </div>
