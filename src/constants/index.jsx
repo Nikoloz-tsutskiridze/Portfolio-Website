@@ -126,10 +126,42 @@ export const EXPERIENCES = [
   {
     yearRange: "2022 - 2023",
     role: "Front-end Developer",
-    company: " Freelancers-Team",
+    company: " - Freelancers-Team",
     description:
       "As a freelance developer, I collaborated closely with a dynamic team of developers, designers, and project managers to build, enhance, and maintain web applications. This experience helped me shape my path for future development.",
-    techStack: ["Html", "Css", "Javascript"],
+    techStack: [],
+  },
+  {
+    yearRange: "2021 - 2022",
+    role: "Heating/Cooling Sales Consultant",
+    company: " - Domino",
+    description:
+      "Developed expertise in HVAC solutions, effectively identifying client needs and recommending tailored heating and cooling systems. Gained valuable technical knowledge and sales experience in a specialized industry.",
+    techStack: [],
+  },
+  {
+    yearRange: "2020 - 2021",
+    role: "Assistant Manager",
+    company: " - Tegeta Motors",
+    description:
+      "Oversaw daily operations and coordinated with staff to ensure efficient workflow. Built strong leadership and communication skills, fostering a collaborative and productive work environment.",
+    techStack: [],
+  },
+  {
+    yearRange: "2019 - 2020",
+    role: "Lifeguard",
+    company: " - Gino Paradise",
+    description:
+      "Ensured the safety of visitors by performing vigilant water monitoring and emergency response. Proficient in CPR, first aid, and water rescue, consistently maintaining a secure environment.",
+    techStack: [],
+  },
+  {
+    yearRange: "2016 - 2017",
+    role: "Sales Consultant",
+    company: " - Universami",
+    description:
+      "Embarked on my professional journey, gaining invaluable early exposure to sales and customer service. Quickly adapted to workplace responsibilities and developed effective communication skills.",
+    techStack: [],
   },
 ];
 
@@ -144,7 +176,7 @@ export const EDUCATION = [
   },
   {
     id: 2,
-    degree: "Frontend Development: React",
+    degree: "Frontend Development - React",
     institution: "Skillwill Neo University",
     duration: "2024 - 2025",
     description:
