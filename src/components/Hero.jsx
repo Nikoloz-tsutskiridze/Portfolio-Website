@@ -82,7 +82,7 @@ function Hero() {
       ref={heroRef}
     >
       {/* Left content (Image) */}
-      <div className="flex justify-center lg:justify-start">
+      <div className="flex justify-center lg:justify-start px-2">
         <img
           src={profile}
           alt={PROFILE.name}
@@ -102,7 +102,7 @@ function Hero() {
             {PROFILE.role}
           </h2>
         </div>
-        <p className="hero-text max-w-2xl p-2 text-lg sm:text-[18px] tracking-tighter lg:text-left lg:text-2xl lg:mb-4 lg:ml-[-8px]">
+        <p className="hero-text max-w-2xl p-2 text-lg sm:text-[18px] tracking-tighter ml-10 lg:text-2xl lg:mb-4 lg:ml-[-8px] text-left">
           {PROFILE.subheading}
         </p>
         <a

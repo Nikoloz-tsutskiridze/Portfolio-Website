@@ -6,12 +6,12 @@ function Contact() {
 
   return (
     <section id="contact" ref={contactRef}>
-      <div className="mt-4 ml-2 flex justify-center space-x-4">
+      <div className="mt-4 ml-1 flex justify-center space-x-3">
         <a
           href="https://github.com/Nikoloz-tsutskiridze"
           target="_blank"
           rel="noopener noreferrer"
-          className="contact-icon"
+          className="contact-icon hover:text-black"
           aria-label="Visit my Github profile"
         >
           <RiGithubFill size={32} />
@@ -21,7 +21,7 @@ function Contact() {
           href="https://www.linkedin.com/in/nikoloz-tsutskiridze-990790299/"
           target="_blank"
           rel="noopener noreferrer"
-          className="contact-icon"
+          className="contact-icon hover:text-blue-500"
           aria-label="Visit my LinkedIn profile"
         >
           <RiLinkedinBoxFill size={32} />
