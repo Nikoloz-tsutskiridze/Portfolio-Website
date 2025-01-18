@@ -1,3 +1,4 @@
+import { SiCsharp, SiStyledcomponents, SiTypescript } from "react-icons/si";
 import project1 from "../assets/project1.webp";
 import project2 from "../assets/project2.webp";
 import project3 from "../assets/project3.webp";
@@ -27,63 +28,69 @@ export const PROFILE = {
   name: "Nikoloz Tsutskiridze",
   role: "Front-End Developer",
   subheading:
-    "Dedicated React.js Developer with extensive experience in developing and managing responsive web applications. Proficient in crafting interactive user interfaces and optimizing application performance.",
+    "Dedicated React Developer with extensive experience in developing and managing responsive web applications. Proficient in crafting interactive user interfaces and optimizing application performance.",
 };
 
 export const PROJECTS = [
   {
     id: 1,
-    title: "The Wild Oasis - Web",
+    title: "Dwell & Decor",
     description:
-      "The Wild Oasis is a web application that transports users to the heart of nature and is designed for customers to easily book wooden cabins for their desired dates.",
-    techStack: ["React.js", "Next.js", "Tailwind CSS", "Supabase"],
-    imgSrc: project1,
-    link: "https://the-wild-oasis-web-psi.vercel.app/",
+      "This is a platform where customers can easily register, browse, and purchase their favorite products. Users can leave ratings and reviews. platform features an intuitive admin panel, for seamless management of products, including adding, editing, and deleting items.",
+    techStack: ["React", "Next.js", "Tailwind CSS", "TypeScript", "Supabase"],
+    imgSrc: project6,
+    link: "https://dwell-decor.vercel.app/",
+    github: "https://github.com/Nikoloz-tsutskiridze/Dwell-Decor.git",
   },
   {
     id: 2,
-    title: "The Wild Oasis - Admin Panel",
+    title: "The Wild Oasis - Web",
     description:
-      "The Admin Panel is designed for internal personnel to efficiently manage the data of wooden cabins. It provides features for adding, updating, and deleting cabin listings.",
-    techStack: ["React.js", "Styled-components", "Supabase"],
-    imgSrc: project2,
-    link: "https://the-woodland-haven.netlify.app/login",
+      "The Wild Oasis is a web application that transports users to the heart of nature and is designed for customers to easily book wooden cabins for their desired dates.",
+    techStack: ["React", "Next.js", "Tailwind CSS", "Supabase"],
+    imgSrc: project5,
+    link: "https://the-wild-oasis-web-psi.vercel.app/",
+    github: "https://github.com/Nikoloz-tsutskiridze/The-Wild-Oasis-Web.git",
   },
   {
     id: 3,
-    title: "Cartify",
+    title: "The Wild Oasis - Admin Panel",
     description:
-      "This is an responsive e-commerce platform where users can easily register and browse a wide selection of products. With a user-friendly interface, customers can quickly place orders for their desired items.",
-    techStack: ["React.js", "Tailwind CSS"],
-    imgSrc: project3,
-    link: "https://cartify-tawny.vercel.app/",
+      "The Admin Panel is designed for internal personnel to efficiently manage the data of wooden cabins. It provides features for adding, updating, and deleting cabin listings.",
+    techStack: ["React", "Styled-components", "Supabase"],
+    imgSrc: project2,
+    link: "https://the-woodland-haven.netlify.app/login",
+    github: "https://github.com/Nikoloz-tsutskiridze/The-Wild-Oasis-App.git",
   },
   {
     id: 4,
-    title: "Rainbow Six Siege",
+    title: "Cartify",
     description:
-      "This site will help you discover your favorite or least favorite Rainbow Six Siege operators, offering a user-friendly interface that makes exploring strategies and gameplay options easy and exciting. Built with GSAP.",
-    techStack: ["React.js", "Tailwind CSS", "GSAP"],
-    imgSrc: project4,
-    link: "https://rainbow-six-siegee.vercel.app/",
+      "This is an responsive e-commerce platform where users can easily register and browse a wide selection of products. With a user-friendly interface, customers can quickly place orders for their desired items.",
+    techStack: ["React", "Tailwind CSS"],
+    imgSrc: project3,
+    link: "https://cartify-tawny.vercel.app/",
+    github: "https://github.com/Nikoloz-tsutskiridze/Cartify-Web.git",
   },
   {
     id: 5,
-    title: "WorldWise",
+    title: "Rainbow Six Siege",
     description:
-      "WorldWise serves as a digital guide to the world, offering insights into various countries, including their history, geography, cultures, languages, and significant landmarks. ",
-    techStack: ["React.js", "Map library"],
-    imgSrc: project5,
-    link: "https://world-wize.netlify.app/",
+      "This site will help you discover your favorite or least favorite Rainbow Six Siege operators, offering a user-friendly interface that makes exploring strategies and gameplay options easy and exciting. Built with GSAP.",
+    techStack: ["React", "Tailwind CSS", "GSAP"],
+    imgSrc: project4,
+    link: "https://rainbow-six-siegee.vercel.app/",
+    github: "https://github.com/Nikoloz-tsutskiridze/gsap.git",
   },
   {
     id: 6,
     title: "Github - User Checker",
     description:
       "This is a simple web application designed to fetch and display GitHub user information. Users can search for any GitHub profile and view details like repositories, followers, and more.",
-    techStack: ["React.js", "Styled-components"],
-    imgSrc: project6,
+    techStack: ["React", "Styled-components"],
+    imgSrc: project1,
     link: "https://github-users-checker.vercel.app/",
+    github: "https://github.com/Nikoloz-tsutskiridze/Github-Users.git",
   },
 ];
 
@@ -101,6 +108,10 @@ export const SKILLS = [
     icon: <RiNextjsFill className="text-green-500" />,
   },
   {
+    name: "TypeScript",
+    icon: <SiTypescript className="text-blue-500" />,
+  },
+  {
     name: "Tailwind CSS",
     icon: <RiCodeSSlashLine className="text-teal-400" />,
   },
@@ -109,16 +120,35 @@ export const SKILLS = [
     icon: <RiSupabaseFill className="text-green-600" />,
   },
   {
+    name: "C#",
+    icon: (
+      <SiCsharp style={{ width: "24px", height: "24px", color: "purple" }} />
+    ),
+  },
+  {
+    name: "Styled components",
+    icon: (
+      <SiStyledcomponents
+        className="text-pink-300"
+        style={{ width: "34px", height: "34px" }}
+      />
+    ),
+  },
+  {
+    name: "GSAP",
+    icon: <h1 className="text-green-500 ">GSAP</h1>,
+  },
+  {
+    name: "Git",
+    icon: <RiGitMergeFill className="text-pink-400" />,
+  },
+  {
     name: "CSS",
     icon: <RiCss3Line className="text-blue-500" />,
   },
   {
     name: "HTML",
     icon: <RiHtml5Line className="text-orange-600" />,
-  },
-  {
-    name: "Git",
-    icon: <RiGitMergeFill className="text-pink-400" />,
   },
 ];
 

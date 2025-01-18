@@ -29,7 +29,7 @@ function Projects() {
   }, []);
 
   return (
-    <section className="pt-16 " id="projects" ref={projectsRef}>
+    <section className="pt-16" id="projects" ref={projectsRef}>
       <div className="px-4">
         <h2 className="mb-8 text-center text-3xl font-medium lg:text-4xl">
           Projects
@@ -40,26 +40,39 @@ function Projects() {
               key={project.id}
               className="project-card flex w-full flex-col p-4 md:w-1/2 lg:w-1/3"
             >
-              {/* <div className="project-card flex flex-col h-full p-4 md:w-1/2 lg:w-1/3"> */}
-              <div className=" flex flex-col h-full overflow-hidden rounded-lg border border-purple-300/20">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <div className="relative flex h-full flex-col overflow-hidden rounded-lg border border-purple-300/20">
+                <div className="group relative">
                   <img
                     src={project.imgSrc}
                     alt={project.title}
-                    className="h-60 w-full object-cover"
+                    className="h-60 w-full object-cover transition-all duration-300 group-hover:opacity-70"
                   />
-                </a>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-gradient-to-t from-purple-600 ease-in">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="m-2 rounded  bg-purple-500 px-4 py-2 text-white transition-all duration-300 hover:bg-purple-600"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="m-2 rounded bg-pink-500 px-4 py-2 text-white transition-all duration-300 hover:bg-pink-600"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </div>
                 <div className="flex-grow p-4">
                   <h3 className="mb-2 text-lg font-medium lg:text-2xl">
                     {project.title}
                   </h3>
                   <p className="mb-4">{project.description}</p>
                 </div>
-                <div className=" bottom-0 left-0 right-0 p-5 border-purple-300/20">
+                <div className="bottom-0 left-0 right-0 border-t p-5 border-purple-300/20">
                   <div className="mb-3 font-bold">Tech Stack:</div>
                   <ul>
                     {project.techStack.map((tech, index) => (
@@ -74,7 +87,6 @@ function Projects() {
                 </div>
               </div>
             </div>
-            // </div>
           ))}
         </div>
       </div>

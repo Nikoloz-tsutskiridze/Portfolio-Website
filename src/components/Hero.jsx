@@ -3,6 +3,7 @@ import { PROFILE } from "../constants";
 import { RiArrowRightUpLine } from "@remixicon/react";
 import profile from "../assets/profile.png";
 import { gsap } from "gsap";
+import Contact from "./Contact";
 
 function Hero() {
   const heroRef = useRef(null);
@@ -57,14 +58,26 @@ function Hero() {
             duration: 0.8,
           },
           "-=0.5"
+        )
+        .from(
+          ".contact-icon",
+          {
+            opacity: 0,
+            y: 20,
+            scale: 0.9,
+            duration: 0.6,
+            stagger: 0.2,
+          },
+          "-=0.4"
         );
     }, heroRef);
+
     return () => ctx.revert();
-  });
+  }, []);
 
   return (
     <section
-      className="grid min-h-screen grid-cols-1 items-center justify-center gap-8 pt-16 sm:px-10 lg:grid-cols-2 lg:pt-24"
+      className="grid min-h-screen grid-cols-1 items-center justify-center gap-8 pt-16 sm:px-10 lg:grid-cols-2 lg:pt-2"
       id="home"
       ref={heroRef}
     >
@@ -97,11 +110,13 @@ function Hero() {
           target="_blank"
           rel="noopener noreferrer"
           download
-          className="hero-btn mb-6 flex gap-1 rounded-full border border-pink-200/50 px-3 py-2 text-sm sm:text-base tracking-tighter"
+          className="hero-btn my-2 flex gap-1 rounded-full border border-pink-200/50 px-3 py-2 text-sm sm:text-base tracking-tighter"
         >
           <span>Download Resume</span>
           <RiArrowRightUpLine />
         </a>
+
+        <Contact />
       </div>
     </section>
   );
