@@ -105,18 +105,20 @@ function Hero() {
         <p className="hero-text max-w-2xl p-2 text-lg sm:text-[18px] tracking-tighter ml-10 lg:text-2xl lg:mb-4 lg:ml-[-8px] text-left">
           {PROFILE.subheading}
         </p>
-        <a
-          href="/Nikoloz-Tsutskiridze.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          download
-          className="hero-btn my-2 flex gap-1 rounded-full border border-pink-200/50 px-3 py-2 text-sm sm:text-base tracking-tighter"
-        >
-          <span>Download Resume</span>
-          <RiArrowRightUpLine />
-        </a>
 
-        <Contact />
+        <div className="flex text-center my-2">
+          <a
+            href="/Nikoloz-Tsutskiridze.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="hero-btn  flex gap-1 rounded-full border border-pink-200/50 px-3 py-2 text-sm sm:text-base tracking-tighter"
+          >
+            <span>Download Resume</span>
+            <RiArrowRightUpLine />
+          </a>
+          <Contact />
+        </div>
       </div>
     </section>
   );

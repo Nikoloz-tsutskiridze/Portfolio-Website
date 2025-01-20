@@ -8,6 +8,15 @@
   color: #fff;
 }
 
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 .bg-image {
   background-image: url("assets/noise.webp");
   background-size: cover;

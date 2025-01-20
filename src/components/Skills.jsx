@@ -12,14 +12,17 @@ function Skills() {
     const ctx = gsap.context(() => {
       gsap.from(".skill-item", {
         opacity: 0,
-        y: 100,
-        duration: 1.5,
+        y: 50,
+        duration: 1.2,
         filter: "blur(5px)",
         ease: "power3.out",
-        stagger: 0.3,
+        stagger: 0.2,
         scrollTrigger: {
           trigger: skillsRef.current,
           toggleActions: "play none none none",
+          start: "top bottom",
+          end: "bottom top",
+          markers: false,
         },
       });
     }, skillsRef);

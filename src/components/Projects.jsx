@@ -12,7 +12,7 @@ function Projects() {
     const ctx = gsap.context(() => {
       gsap.from(".project-card", {
         opacity: 0,
-        y: 100,
+        y: 50,
         duration: 1.5,
         filter: "blur(3px)",
         ease: "power3.out",
