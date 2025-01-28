@@ -211,7 +211,7 @@ export const EDUCATION = [
     duration: "2024 - 2025",
     description:
       "The course provided a fundamental understanding of programming and the web development process, including best practices. I gained not only technical skills but also personal growth, which helped shape my overall development.",
-    certificatePDF: "/public/Skillwill.pdf",
-    certificateThumbnail: "/public/certificate.png",
+    certificatePDF: "/Skillwill.pdf",
+    certificateThumbnail: "/certificate.png",
   },
 ];

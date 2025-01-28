@@ -85,7 +85,7 @@ function Education() {
             </button>
             <iframe
               src={modalImage}
-              className="w-full h-[80vh] rounded-lg"
+              className="w-full h-[90vh] rounded-lg"
               frameBorder="0"
             />
           </div>
