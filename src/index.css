@@ -8,18 +8,21 @@
   color: #fff;
 }
 
-html {
-  overflow: scroll;
-  overflow-x: hidden;
-}
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-
 .bg-image {
   background-image: url("assets/noise.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+section {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#d3d3d3, rgb(175, 78, 255));
 }

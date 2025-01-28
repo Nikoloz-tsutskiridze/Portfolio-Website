@@ -57,7 +57,7 @@ export const PROJECTS = [
     title: "The Wild Oasis - Admin Panel",
     description:
       "The Admin Panel is designed for internal personnel to efficiently manage the data of wooden cabins. It provides features for adding, updating, and deleting cabin listings.",
-    techStack: ["React", "Styled-components", "Supabase"],
+    techStack: ["React", "Styled-components", "Supabase", "React libraries"],
     imgSrc: project2,
     link: "https://the-woodland-haven.netlify.app/login",
     github: "https://github.com/Nikoloz-tsutskiridze/The-Wild-Oasis-App.git",
@@ -211,5 +211,7 @@ export const EDUCATION = [
     duration: "2024 - 2025",
     description:
       "The course provided a fundamental understanding of programming and the web development process, including best practices. I gained not only technical skills but also personal growth, which helped shape my overall development.",
+    certificatePDF: "/public/Skillwill.pdf",
+    certificateThumbnail: "/public/certificate.png",
   },
 ];

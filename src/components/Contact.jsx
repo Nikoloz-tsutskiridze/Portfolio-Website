@@ -5,8 +5,8 @@ function Contact() {
   const contactRef = useRef(null);
 
   return (
-    <section id="contact" ref={contactRef}>
-      <div className=" ml-4 mt-1 flex justify-center space-x-3">
+    <section className="py-16" id="contact" ref={contactRef}>
+      <div className="flex justify-center space-x-8">
         <a
           href="https://github.com/Nikoloz-tsutskiridze"
           target="_blank"
@@ -14,10 +14,7 @@ function Contact() {
           className="contact-icon group"
           aria-label="Visit my Github profile"
         >
-          <RiGithubFill
-            size={32}
-            className="transition-transform duration-200 group-hover:scale-110 group-hover:text-black"
-          />
+          <RiGithubFill className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-200 group-hover:scale-110 group-hover:text-black" />
         </a>
 
         <a
@@ -27,10 +24,7 @@ function Contact() {
           className="contact-icon group"
           aria-label="Visit my LinkedIn profile"
         >
-          <RiLinkedinBoxFill
-            size={32}
-            className="transition-transform duration-200 group-hover:scale-110 group-hover:text-blue-500"
-          />
+          <RiLinkedinBoxFill className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-200 group-hover:scale-110 group-hover:text-blue-500" />
         </a>
       </div>
     </section>

@@ -3,7 +3,6 @@ import { PROFILE } from "../constants";
 import { RiArrowRightUpLine } from "@remixicon/react";
 import profile from "../assets/profile.png";
 import { gsap } from "gsap";
-import Contact from "./Contact";
 
 function Hero() {
   const heroRef = useRef(null);
@@ -102,7 +101,7 @@ function Hero() {
             {PROFILE.role}
           </h2>
         </div>
-        <p className="hero-text max-w-2xl p-2 text-lg sm:text-[18px] tracking-tighter ml-10 lg:text-2xl lg:mb-4 lg:ml-[-8px] text-left">
+        <p className="hero-text max-w-2xl p-2 text-lg sm:text-[18px] tracking-widew ml-10 lg:text-[22px] lg:mb-4 lg:ml-[-8px] text-left">
           {PROFILE.subheading}
         </p>
 
@@ -117,7 +116,6 @@ function Hero() {
             <span>Download Resume</span>
             <RiArrowRightUpLine />
           </a>
-          <Contact />
         </div>
       </div>
     </section>
