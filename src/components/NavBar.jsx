@@ -1,10 +1,10 @@
-import { RiCloseLine, RiMenu3Line, RiArrowUpLine } from "@remixicon/react";
+import { RiCloseLine, RiMenu3Line } from "@remixicon/react";
 import { useState, useEffect } from "react";
 import { NAVIGATION_LINKS } from "../constants";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [showScrollToTop, setShowScrollToTop] = useState(false);
+  const [, setShowScrollToTop] = useState(false);
 
   function toggleMobileMenu() {
     setIsMenuOpen(!isMenuOpen);
@@ -24,13 +24,6 @@ function NavBar() {
       });
     }
     setIsMenuOpen(false);
-  }
-
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
   }
 
   useEffect(() => {
@@ -114,17 +107,6 @@ function NavBar() {
           </div>
         )}
       </nav>
-
-      {/* Scroll-to-top button */}
-      {showScrollToTop && (
-        <button
-          className="fixed bottom-4 right-4 md:bottom-14 md:right-14 z-50 flex items-center justify-center w-10 h-10 bg-purple-600 text-white rounded-full shadow-lg hover:bg-purple-700"
-          onClick={scrollToTop}
-          aria-label="Scroll to top"
-        >
-          <RiArrowUpLine className="h-6 w-6" />
-        </button>
-      )}
     </div>
   );
 }
